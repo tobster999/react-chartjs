@@ -14,6 +14,15 @@ import "./App.css";
 import hearRateData from "./data/heartRateData.json";
 import stepsData from "./data/stepsData.json";
 
+// hardcoded patient metadata
+const patient = {
+  name: "Brenda Smith",
+  dateOfBirth: "01-06-1934",
+  age: 89,
+  residence: "Buttercup Gardens",
+  image: "/old.png",
+};
+
 defaults.maintainAspectRatio = false; // original aspect ratio is not maintained upon resize
 defaults.responsive = true; // resizes the graph to fit the container
 
@@ -32,7 +41,28 @@ defaults.plugins.title.color = "black";
 // export lets main.jsx import this component and use it to render the app
 export const App = () => {
   return (
-    <div className = "App">
+    <div className="App">
+      <section className="patientCard" aria-label="Patient information">
+        <img className="patientImage" src={patient.image} alt="" />
+        <div className="patientDetails">
+          <h1>{patient.name}</h1>
+          <dl>
+            <div>
+              <dt>Date of birth</dt>
+              <dd>{patient.dateOfBirth}</dd>
+            </div>
+            <div>
+              <dt>Age</dt>
+              <dd>{patient.age}</dd>
+            </div>
+            <div>
+              <dt>Residence</dt>
+              <dd>{patient.residence}</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
       <div className = "dataCard heartRateCard"> 
         <Line
           data = {{

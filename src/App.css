@@ -1,20 +1,60 @@
 /* describes the styles for the main application container */
 
 .App {
-  height: 100vh;
+  min-height: 100vh; /* 100% of the viewport height */
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  align-content: center;
-  gap: 1vw; /* gap between the graphs */
+  gap: 1.25rem; /* space between patient card and data cards */
+  padding: 1.25rem;
+  background-color: #ddf1f5; /* colour behind the app - not usually seen! */
+}
+
+.patientCard {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem; /* space between patient image and patient details */
+  width: 60%; /* width of the card relative to the app container */
+  padding: 1.25rem; /* space between edge of card and patient image/details */
+  background-color: #fccece;
+  border-radius: 1.5rem; /* makes corners more or less rounded */
+  /* with parameters in the form: rgba(red, green, blue, alpha) 
+  x-offset (positive right) y-offset (positive down) blur-radius spread-radius; */
+  box-shadow: rgba(255, 0, 0, 0.2) 10px 10px 5px 1px;
+}
+
+.patientImage {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%; /* makes the image circular */
+  object-fit: cover;
+}
+
+.patientDetails h1 { /* patient name */
+  margin-bottom: 0.5rem; /* space between patient name and patient details */ 
+  font-size: 1.5rem; /* size of patient name */
+}
+
+.patientDetails dl { /* data1 */
+  display: flex;
   flex-wrap: wrap;
-  background-color: #ddf1f5; /* colour behind the app */
+  gap: 1rem 2rem; /* space between each field name/value pair */
+}
+
+.patientDetails dt { /* field name */
+  color: #555;
+  font-size: 0.85rem;
+}
+
+.patientDetails dd { /* field value */
+  margin: 0.2rem 0 0;
+  font-weight: 600;
 }
 
 .dataCard { /* where each data card contains a single graph */
-  background-color: #efefef; /* colour behind "cards" */
+  background-color: #efffd5; /* colour behind "cards" */
   border-radius: 2.5em; /* makes corners more or less rounded */
   /* havent invesitagted all parameters, 
   but basically casts a shadow behind boxes*/
@@ -27,11 +67,14 @@
   /* this might not be required in the end, but could be handy if we 
   desired differing sizes/style of differing vital graphs */
   width: 90%; /* width of the card relative to the app container */
+  max-width: 70rem;
   height: 18rem; /* height of the card relative to the app container */
 }
 
 .stepCountCard {
-  width: 70%;
+  width: 90%;
+  max-width: 50rem;
   height: 18rem;
 }
+
 
