@@ -1,0 +1,58 @@
+[ 
+    {
+        "label": "Monday",
+        "value": 10000
+    },
+    {
+        "label": "Tuesday",
+        "value": 12000
+    },
+    {
+        "label": "Wednesday",
+        "value": 8000
+    },
+    {
+        "label": "Thursday",
+        "value": 15000
+    },
+    {
+        "label": "Friday",
+        "value": 9000
+    },
+    {
+        "label": "Saturday",
+        "value": 11000
+    },
+    {
+        "label": "Sunday",
+        "value": 7000
+    },
+    {
+        "label": "Monday",
+        "value": 13000
+    },
+    {
+        "label": "Tuesday",
+        "value": 14000
+    },
+    {
+        "label": "Wednesday",
+        "value": 10000
+    },
+    {
+        "label": "Thursday",
+        "value": 16000
+    },
+    {
+        "label": "Friday",
+        "value": 12000
+    },
+    {
+        "label": "Saturday",
+        "value": 9000
+    },
+    {
+        "label": "Sunday",
+        "value": 8000
+    }
+]

@@ -1,3 +1,5 @@
+/* describes the styles for the main application container */
+
 .App {
   height: 100vh;
   width: 100%;
@@ -6,21 +8,26 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  gap: 2vw;
+  gap: 1vw; /* gap between the graphs */
   flex-wrap: wrap;
-  background-color: #ddd;
+  background-color: #ddf1f5; /* colour behind the app */
 }
 
-.dataCard {
-  background-color: #efefef;
-  border-radius: 0.5em;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 1em;
+.dataCard { /* where each data card contains a single graph */
+  background-color: #efefef; /* colour behind "cards" */
+  border-radius: 2.5em; /* makes corners more or less rounded */
+  /* havent invesitagted all parameters, 
+  but basically casts a shadow behind boxes*/
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+  /* space between edge of cards and the graphs*/ 
+  padding: 0.8em;
 }
 
-.revenueCard {
-  width: 92%;
-  height: 20rem;
+.revenueCard { /* defines styling for a specific type of data card */
+  /* this might not be required in the end, but could be handy if we 
+  desired differing sizes/style of differing vital graphs */
+  width: 90%; /* width of the card relative to the app container */
+  height: 20rem; /* height of the card relative to the app container */
 }
 
 .customerCard {
