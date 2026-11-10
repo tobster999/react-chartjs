@@ -8,6 +8,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
+to currently run the WDT web-app, all one must do is:
 npm install (once unless dependencies change)
 npm run dev
 open localhost

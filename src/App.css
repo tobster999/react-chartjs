@@ -23,19 +23,15 @@
   padding: 0.8em;
 }
 
-.revenueCard { /* defines styling for a specific type of data card */
+.heartRateCard { /* defines styling for a specific type of data card */
   /* this might not be required in the end, but could be handy if we 
   desired differing sizes/style of differing vital graphs */
   width: 90%; /* width of the card relative to the app container */
-  height: 20rem; /* height of the card relative to the app container */
+  height: 18rem; /* height of the card relative to the app container */
 }
 
-.customerCard {
-  width: 50%;
-  height: 20rem;
+.stepCountCard {
+  width: 70%;
+  height: 18rem;
 }
 
-.categoryCard {
-  width: 40%;
-  height: 20rem;
-}
